@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins+Sans");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("GitHub-headpic.jpg");
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.user-form input::placeholder {
+    color: black;
+}
+
+#search {
+    margin: 10px;
+    padding: 1rem;
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.904);
+    color: rgb(0, 0, 0);
+    display: block;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px;
+}
+
+.image {
+    max-width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 8px solid #ffffff;
+}
+
+.card {
+    max-width: 700px;
+    background-color: rgba(0, 0, 0, 0.507);
+    color: white;
+    box-shadow: 0 5px 10px;
+    display: flex;
+    padding: 30px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.user-info {
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.user-info h2 {
+    margin-top: 0;
+    padding-bottom: 10px;
+}
+
+.user-info ul {
+    list-style-type: none;
+    display: flex;
+    margin: 10px 0;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.user-info ul li {
+    display: flex;
+    align-items: center;
+}
+
+.user-info ul li strong {
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+
+.repos {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    font-size: 0.7rem;
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+}
+
+@media(max-width:500px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .user-form {
+        max-width: 200px;
+        justify-content: center;
+        display: flex;
+    }
+}
